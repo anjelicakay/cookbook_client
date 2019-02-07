@@ -7,13 +7,14 @@
     <li><%= ingredient %></li>
 <% end %>
 </ul>
-
 <h4>Directions: </h4>
 <ol>
   <% @recipe["formatted"]["directions"].each do |direction| %>
     <li><%= direction %></li>
   <% end %>
 </ol>
+
+<img src="<%= @recipe["imgae_url"] %>" alt="">
 
 <a href="/client/recipes">Home</a>
 
